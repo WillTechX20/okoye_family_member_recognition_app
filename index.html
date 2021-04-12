@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Okoye Family Member Recognition App</title>
+        <meta name="veiwport" content="width=deivce-width, intial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+    <body>
+        <h1>Okoye Family Member Recognition App</h1>
+        <p>This app can indentify members of the Okoye family!</p>
+        <h2>Camera</h2>
+        <div class="camera"></div>
+        <input type="button" value="Take Snapshot" onclick="takeSnapshot();">
+        <h2>Snapshot</h2>
+        <div class="snapshot_container"></div>
+        <input type="button" value="Check Family Member" onclick="checkFamilyMember();">
+        <p class="resulting_family_member">Result: None</p>
+        <p class="accuracy">Accuracy: None</p>
+        <div class="script">
+            <script src="main.js"></script>
+        </div>
+    </body>
+</html>
